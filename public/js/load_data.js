@@ -1,5 +1,5 @@
 const load_data = async (address,callback) => {
-        let response = await fetch('http://localhost:3000/search/data?address='+encodeURIComponent(address));
+        let response = await fetch('/search/data?address='+encodeURIComponent(address));
         let result =  await response.json();
         if(result.error === undefined){
            callback(undefined,result);
@@ -53,7 +53,7 @@ if(localStorage.getItem('address') && localStorage.getItem('address') !== null){
     const success = async (position) =>{
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude 
-            let response = await fetch(`http://localhost:3000/location?lat=${latitude}&lng=${longitude}`);
+            let response = await fetch(`/location?lat=${latitude}&lng=${longitude}`);
             let result = await response.json();
             if(result.error) return window.location.href ='/help';
 
