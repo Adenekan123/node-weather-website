@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/utitlity.css">
+
+</head>
+<body>
+     <div class="loader">
+        <div class="loader__box">
+            <img src="img/loading.gif" alt="">
+        </div>
+        <h2 class="mt-2">Loading...</h2>
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="header__switch">
+                <img src="img/switch.png" alt="" class="header__switch--icon">
+            </div>
+            <div class="header__logo">
+                <img src="img/logo.png" alt="" class="header__logo--icon">
+                <span>Current Wave</span>
+            </div>
+            <div class="header__search">
+                <img src="img/search.png" alt="" class="header__search--icon">
+            </div>
+        </header>
+        <main>
+            <div class="main__banner">
+                <div class="main__banner--overlay"></div>
+                <div class="main__banner--content">
+                    <h2 class="main__banner--header">
+                        <img src="img/location.png" alt="" class="main__banner--icon">
+                      <span id="place_name1">New York, Philadelphia </span> 
+                    </h2>
+                    <div class="main__banner--display">
+                        <img src="img/rain.png" alt="" id="main_weather_img" class="main__banner--display-img">
+                        <div class="mx-3 border"></div>
+                        <h1 class="main__banner--degree" id="temp">60<sup>0</sup></h1>
+                    </div>
+                    <h2 class="main__banner--header">
+                        <img src="img/location.png" alt="" class="main__banner--icon">
+                      <span id="place_name2">New York, Philadelphia </span> 
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <img src="img/sun.png" alt="">
+                        <p class="card__data" id="dew_point">123/k/h</p>
+                        <p class="card__title">Dew_Point</p>
+                    </div>
+                </div>
+                 <div class="col-6">
+                    <div class="card">
+                        <img src="img/cloud.png" alt="">
+                        <p class="card__data" id="cloud_data">123/k/h</p>
+                        <p class="card__title">Feels Like</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <img src="img/wind.png" alt="">
+                        <p class="card__data" id="wind_data">123/k/h</p>
+                        <p class="card__title">wind</p>
+                    </div>
+                </div>
+                 <div class="col-6">
+                    <div class="card">
+                        <img src="img/temperature.png" alt="">
+                        <p class="card__data" id="temp_data" >123/k/h</p>
+                        <p class="card__title">Humidity</p>
+                    </div>
+                </div>
+               
+            </div>
+        </main>
+        <footer>
+            <div class="nav">
+                <a href="#" class="nav__link">
+                    <img src="img/back.png" alt="" class="nav__icon">
+                </a>
+                <a href="/" class="nav__link">
+                    <img src="img/home.png" alt="" class="nav__icon">
+                </a>
+                <a href="/search" class="nav__link">
+                    <img src="img/search.png" alt="" class="nav__icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+        <script src="/js/load_data.js"></script>
+
+</body>
+</html>
